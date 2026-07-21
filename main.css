@@ -1,0 +1,59 @@
+input{
+    display: block;
+}
+.btn{
+    margin-top:10px;
+    background-color: grey;
+    color:white;
+    border:none;
+    cursor:pointer;
+    transition: opacity 0.4s;
+}
+.btn:hover{
+    opacity: 0.6;
+}
+.btn:active{
+    opacity: 1;
+    scale:1.25;
+}
+div{
+    padding:25px;
+     border : 2px solid red ;
+    display:flex;
+    
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+   
+    
+    /* width: 400px; */
+}
+body{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    height:100vh;
+}
+.inp{
+    margin-top:400px;
+    margin-left:15px;
+    margin-right:5px;
+
+
+}
+.total{
+    border-radius: 20px;
+    border:none;
+    margin-top:400px;
+    box-shadow: 10px 10px 20px rgba(56, 0, 0,5);
+}
+#res,#grade{
+    background-color: white;
+    scale:1.4;
+    box-shadow: 10px 10px 10px rgba(56, 0, 0,5);
+    padding:10px;
+}
+#grade{
+    margin-left:35px;
+}
