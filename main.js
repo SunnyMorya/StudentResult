@@ -24,7 +24,7 @@ function cal()
     document.getElementsByClassName("total")[0].value = sum;
 
     let persentage = sum / 300 *100;
-    document.getElementsByClassName("total")[1].value = persentage;
+    document.getElementsByClassName("total")[1].value = persentage ;
     
     
     // pass or fail
