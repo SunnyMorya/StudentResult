@@ -14,6 +14,8 @@ function cal()
     
         alert("wellcome  " +name);
 
+        document.getElementsByClassName("Name1")[0].value = name;
+
         let emarks = Number(emark);
         let hmarks = Number(hmark);
         let smarks = Number(smark);

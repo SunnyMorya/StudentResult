@@ -1,13 +1,27 @@
 input{
     display: block;
+    width:100%;
 }
-.btn{
+p{
+    display:block;
+}
+.btn,.btn1{
     margin-top:10px;
     background-color: grey;
     color:white;
     border:none;
     cursor:pointer;
     transition: opacity 0.4s;
+}
+.btn{
+    margin-bottom:30px;
+}
+.btn1:hover{
+    opacity: 0.6;
+}
+.btn1:active{
+    opacity: 1;
+    scale:1.25;
 }
 .btn:hover{
     opacity: 0.6;
@@ -17,13 +31,18 @@ input{
     scale:1.25;
 }
 div{
+    width:350px;
     padding:25px;
      border : 2px solid red ;
     display:flex;
+        border-radius:10px;
+
     
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
+
     
    
     
@@ -35,14 +54,14 @@ body{
     align-items:center;
     height:100vh;
 }
-.inp{
+/* /* .inp{
     margin-top:400px;
     margin-left:15px;
     margin-right:5px;
 
 
-}
-.total{
+} */
+/* .total{
     border-radius: 20px;
     border:none;
     margin-top:400px;
@@ -56,4 +75,11 @@ body{
 }
 #grade{
     margin-left:35px;
-}
+} */ 
+ .Result{
+    margin-top: 20px;
+    padding:15px;
+    border-radius:10px;
+    margin-left: 100px;
+    width:350px;
+ }

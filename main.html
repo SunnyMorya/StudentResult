@@ -11,22 +11,30 @@
 <body>
     <!-- <h1 class="h1">Student Result</h1> -->
     <div>
+        <h1>Student Info.</h1>
     <form>
        Name. <input type="text" class="Name" placeholder="Name">
        Eng.<input type="number" class="emarks" placeholder="Marks in english">
        Hin.<input type="number" class="emarks" placeholder="Marks in Hindi">
        Sci.<input type="number" class="emarks" placeholder="Marks in Science">
-    <button type="reset" class="btn">reset</button>
+    <button type="reset" class="btn1">reset</button>
+        <button type = "button" class="btn" onclick="cal()">Calculate</button>
+
     </form>
-    <button type = "button" class="btn" onclick="cal()">Calculate</button>
     
     </div>
+    <div class="Result">
+         <h1>Result Status</h1>
+    <form>
+    <label class="inp">Name</label>
+    <input type="text" class="Name1" placeholder="Name" readonly>    
     <label class="inp">Total No.</label>
     <input type="text" class="total" placeholder="Total" readonly>
      <label class="inp">persentage</label>
     <input type="text" class="total" placeholder="percentage" readonly>
     <p id="res">Result</p>
     <p id="grade">Grade</p>
-
+        </form>
+        </div>
 </body>
 </html>
