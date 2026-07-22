@@ -42,23 +42,23 @@ function cal()
     let grade = document.querySelector("#grade");
     if(persentage>=90)
     {
-        grade.textContent = "A";
+        grade.textContent = "A+";
     }
     else if (persentage>=80)
     {
-        grade.textContent = "B+";
+        grade.textContent = "A";
     }
     else if (persentage>=70 )
     {
-        grade.textContent = "B";
+        grade.textContent = "B+";
     }
     else if (persentage>=60)
     {
-        grade.textContent = "C+";
+        grade.textContent = "B";
     }
     else if (persentage>=40)
     {
-        grade.textContent = "C";
+        grade.textContent = "C+";
     }
     else{
         grade.textContent = "D ";
