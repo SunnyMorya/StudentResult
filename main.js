@@ -21,17 +21,21 @@ function cal()
         let smarks = Number(smark);
 
     let sum = emarks+hmarks+smarks;
+    if(emarks>40 && hmarks>40 && smarks>40)
+    {
     document.getElementsByClassName("total")[0].value = sum;
-
+    }
     let percentage = sum / 300 *100;
+   if(emarks>40 && hmarks>40 && smarks>40)
+    {
     document.getElementsByClassName("total")[1].value = percentage.toFixed(2) ;
-    
+    }
     
     // pass or fail
     let res = document.querySelector("#res");
     if(emarks<40 || hmarks<40 || smarks<40)
     {
-        res.textContent= "fail";
+        res.innerHTML= "<h5>Fail</h5>";
     res.style.color = "red";
         
     }
@@ -42,6 +46,8 @@ function cal()
     }
     
     let grade = document.querySelector("#grade");
+        if(emarks>40 && hmarks>40 && smarks>40)
+{
     if(percentage>=90)
     {
         grade.textContent = "A+";
@@ -68,4 +74,5 @@ function cal()
         Message.style.color = "red";
         Message.textContent = "Better luck next time";
     }
+}
 }

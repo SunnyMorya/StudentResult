@@ -1,6 +1,7 @@
 input{
     display: block;
     width:100%;
+    margin-top:5px;
 }
 p{
     display:block;
@@ -12,6 +13,11 @@ p{
     border:none;
     cursor:pointer;
     transition: opacity 0.4s;
+    border-radius: 10px;
+}
+.btn1{
+    padding-left:15px;
+    padding-right:15px;
 }
 .btn{
     margin-bottom:30px;
@@ -42,14 +48,18 @@ div{
     justify-content: center;
     align-items: center;
     background-color:rgb(190, 221, 248);
-    box-shadow: 5px 5px 10px rgba(39, 38, 38,0.68);   
+    box-shadow: 5px 5px 10px rgba(39, 38, 38,0.68);  
+    transition: transform 0.35s; 
      
     
    
     
     /* width: 400px; */
 }
+div:hover{
+    transform : scale(1.34);
 
+}
 body{
     display:flex;
     justify-content: center;
@@ -88,3 +98,6 @@ body{
  h1{
     color: rgb(140, 40, 40);
  }
+label{
+    margin-top:5px;
+}
