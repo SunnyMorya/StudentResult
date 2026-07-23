@@ -15,10 +15,10 @@
        
         <h1>Student Info.</h1>
     <form>
-       Name. <input type="text" class="Name" placeholder="Name">
-       Eng.<input type="number" class="emarks" placeholder="Marks in english">
-       Hin.<input type="number" class="emarks" placeholder="Marks in Hindi">
-       Sci.<input type="number" class="emarks" placeholder="Marks in Science">
+       Name. <input type="text" class="Name" placeholder="Name" >
+       Eng.<input type="number" class="emarks" placeholder="Marks in english" min="1" max="100">
+       Hin.<input type="number" class="emarks" placeholder="Marks in Hindi" min="1" max="100">
+       Sci.<input type="number" class="emarks" placeholder="Marks in Science" minlength="1" maxlength="100">
     <button type="reset" class="btn1">reset</button>
         <button type = "button" class="btn" onclick="cal()">Calculate</button>
 
@@ -28,7 +28,8 @@
     <div class="Result">
          <h1>Result Status</h1>
     <form>
-    <label class="inp">Name</label>
+    <label class="inp">Name:</label>
+       
     <input type="text" class="Name1" placeholder="Name" readonly>    
     <label class="inp">Total No.</label>
     <input type="text" class="total" placeholder="Total" readonly>
@@ -36,6 +37,7 @@
     <input type="text" class="total" placeholder="percentage" readonly>
     <p id="res">Result</p>
     <p id="grade">Grade</p>
+    <p id="bless">
         </form>
         </div>
 </body>

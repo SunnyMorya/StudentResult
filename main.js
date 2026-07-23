@@ -23,8 +23,8 @@ function cal()
     let sum = emarks+hmarks+smarks;
     document.getElementsByClassName("total")[0].value = sum;
 
-    let persentage = sum / 300 *100;
-    document.getElementsByClassName("total")[1].value = persentage ;
+    let percentage = sum / 300 *100;
+    document.getElementsByClassName("total")[1].value = percentage.toFixed(2) ;
     
     
     // pass or fail
@@ -42,28 +42,30 @@ function cal()
     }
     
     let grade = document.querySelector("#grade");
-    if(persentage>=90)
+    if(percentage>=90)
     {
         grade.textContent = "A+";
     }
-    else if (persentage>=80)
+    else if (percentage>=80)
     {
         grade.textContent = "A";
     }
-    else if (persentage>=70 )
+    else if (percentage>=70 )
     {
         grade.textContent = "B+";
     }
-    else if (persentage>=60)
+    else if (percentage>=60)
     {
         grade.textContent = "B";
     }
-    else if (persentage>=40)
+    else if (percentage>=40)
     {
         grade.textContent = "C+";
     }
     else{
         grade.textContent = "D ";
+        let Message = document.querySelector("#bless");
+        Message.style.color = "red";
         Message.textContent = "Better luck next time";
     }
 }
